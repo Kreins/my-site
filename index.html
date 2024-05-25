@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Random Redirect</title>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Array of YouTube video URLs
+            var videos = [
+                "https://www.youtube.com/watch?v=videoID1",
+                "https://www.youtube.com/watch?v=videoID2",
+                "https://www.youtube.com/watch?v=videoID3"
+                // Add more video URLs as needed
+            ];
+
+            // Select a random video from the array
+            var randomVideo = videos[Math.floor(Math.random() * videos.length)];
+
+            // Redirect to the selected video
+            window.location.href = randomVideo;
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting to a random video...</p>
+</body>
+</html>
